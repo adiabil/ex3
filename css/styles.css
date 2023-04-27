@@ -277,10 +277,6 @@ header #ul2 li:nth-child(1) a:hover, header #ul2 li:nth-child(3) a:hover {
     margin-right: 10%;
     padding-top: 35px;
     display: flex;
-  
-    
- 
-  
     
 }
 
@@ -358,9 +354,11 @@ header #ul2 li:nth-child(1) a:hover, header #ul2 li:nth-child(3) a:hover {
     width: 80px;
     right: 24px;
     top: 21px;
+
     margin-bottom: 22px;
     border-radius: 0px;
     background-color: #000000;
+    cursor: pointer;
 }
 
 .footer2 {
@@ -387,6 +385,9 @@ header #ul2 li:nth-child(1) a:hover, header #ul2 li:nth-child(3) a:hover {
 #layout3 #wrapper3 {
     justify-content: space-between;
     flex-wrap: wrap;
+    display: flex;
+    
+   
 }
 
 #wrapper3 {
@@ -395,11 +396,11 @@ header #ul2 li:nth-child(1) a:hover, header #ul2 li:nth-child(3) a:hover {
     background-color: #FFFFFF;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .nav-layout3 {
     width: 372px;
-    height: 995px;
     background-color: #E5E5E5;
     display: flex;
     align-items: flex-start;
@@ -407,30 +408,38 @@ header #ul2 li:nth-child(1) a:hover, header #ul2 li:nth-child(3) a:hover {
 }
 
 .boxes-layout3 {
-    height: 995px;
-    
+    margin-top:  123px; 
+    margin-left: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
 }
 
 .blue-rectangle {
-    height: 995px;
+    min-height: 995px;
+    height: auto;
+    bottom: 0;
     width: 112px;
     background: rgba(24, 71, 239, 0.3);
    
 }
 
 .yellow-rectangle { 
-    width: 100%;
     height: 463px;
-    left: 0px;
-    top: 1118px;
+    width: 100%;
     background: #EBEF18;
+
 }
 
 .footer3 {
-    width: 100%;
+   
     height: 41px;
     bottom: 0;
-    background: #000000;   
+    background: #000000; 
+   
 }
     
 @media(max-width:1000px){
@@ -444,13 +453,15 @@ header #ul2 li:nth-child(1) a:hover, header #ul2 li:nth-child(3) a:hover {
 
     #layout3 {
         flex-direction: column;
-    width: 100%;
-    height: 1292px;
-    display: flex;
+        align-content: center;
+        width: 100%;
+        height: 1292px;
+        display: flex;
     } 
 
   .nav-layout3 {
     background-color: #E5E5E5;
+    align-content: center;
     position: absolute;
     height: 105px;
     width: 100%;
@@ -488,16 +499,19 @@ header #ul2 li:nth-child(1) a:hover, header #ul2 li:nth-child(3) a:hover {
         height: 409px;
         top: 1574px;
         background: #EBEF18;
+        
     }
     .blue-rectangle{
         display: none;
+       
     }
+    
     .footer3{
         position: absolute;
         background: #000000;
         left: 0px;
-        height: 41px;
         width: 100%;
         top: 1983px; 
     }
+    
 }
